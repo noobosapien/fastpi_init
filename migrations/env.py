@@ -14,6 +14,7 @@ if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 config.set_section_option("devdb", "sqlalchemy.url", os.getenv("DEV_DATABASE_URL"))
+config.set_section_option("testdb", "sqlalchemy.url", os.getenv("TEST_DATABASE_URL"))
 target_metadata = models.Base.metadata
 
 
