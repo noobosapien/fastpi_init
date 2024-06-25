@@ -1,5 +1,4 @@
 from sqlalchemy import Integer, Boolean, String, Text, DateTime, Enum
-import pytest
 from sqlalchemy.dialects.postgresql import UUID
 
 
@@ -87,3 +86,20 @@ def test_model_structure_unique_constraints(db_inspector):
     assert any(constraint["name"] == "uq_product_name" for constraint in constraints)
     assert any(constraint["name"] == "uq_product_slug" for constraint in constraints)
     assert any(constraint["name"] == "uq_product_pid" for constraint in constraints)
+
+
+def test_model_structure_foreign_key(db_inspector):
+    table = "product"
+    foreign_keys = db_inspector.get_foreign_keys(table)
+
+    product_foreign_key = next(
+        (
+            fk
+            for fk in foreign_keys
+            if fk["constrained_columns"] == ["category_id"]
+            or fk["constrained_columns"] == ["seasonal_event"]
+        ),
+        None,
+    )
+
+    assert product_foreign_key is not None
