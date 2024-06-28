@@ -1,0 +1,17 @@
+2024-06-28 13:57:30,429 - ERROR - Error while retrieving category bu slug: 400: Category name and level exists
+2024-06-28 13:57:30,434 - ERROR - Error while retrieving category bu slug: 400: Category slug exists
+2024-06-28 13:57:30,510 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:57:30,543 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:57:30,547 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:57:30,552 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:57:30,567 - ERROR - Unexpected error while updating category: Internal server error
+2024-06-28 13:57:30,582 - ERROR - Unexpected error while deleting category: Internal server error
+2024-06-28 13:58:16,150 - ERROR - Error while retrieving category bu slug: 400: Category name and level exists
+2024-06-28 13:58:16,155 - ERROR - Error while retrieving category bu slug: 400: Category slug exists
+2024-06-28 13:58:16,160 - ERROR - Unexpected error while creating category: Internal server error
+2024-06-28 13:58:16,175 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:58:16,212 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:58:16,218 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:58:16,224 - ERROR - Unexpected error while retriving categories: Internal server error
+2024-06-28 13:58:16,242 - ERROR - Unexpected error while updating category: Internal server error
+2024-06-28 13:58:16,257 - ERROR - Unexpected error while deleting category: Internal server error

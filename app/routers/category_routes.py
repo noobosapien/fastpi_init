@@ -15,7 +15,7 @@ from typing import List
 
 router = APIRouter()
 db = SessionLocal()
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("app")
 
 
 @router.post("/", response_model=CategoryReturn, status_code=201)
